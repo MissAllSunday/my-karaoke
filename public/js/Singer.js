@@ -13,12 +13,14 @@ const addSinger = function (name) {
         });
 };
 
-const getSingerActive = function () {
-    const singerListRef = database.ref('singer_list')
+const activateSinger = function () {
+    const singerListRef = database.ref('singer_list');
+    const activeSinger = singerListRef.limitToFirst(1)
+        .once('value')
         .then(function (snapshot) {
-            var  singer = snapshot
+            const singer = snapshot.val();
+            singer.update({isSinging: true});
+            database.ref('singing').push().set(singer);
             return singer;
         });
 };
-
-addSinger('Singer');
