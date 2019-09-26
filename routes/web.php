@@ -11,8 +11,8 @@
 |
 */
 
-$app->get('user/{id}', 'UserController@show');
+$router->get('/', 'InicioController');
 
-$app->get('user/{id}', 'UserController@show');
+$router->get('user/{id}', 'UserController@show');
 
-$app->get('user/{id}', 'UserController@show');
+$router->get('user/{id}', 'UserController@show');
