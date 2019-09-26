@@ -11,7 +11,7 @@
                            placeholder="Super secret password">
                 </div>
                 <div class="col-md-9"></div>
-                <button type="submit" class="btn btn-primary btn-lg float-right">Lets Sing!</button>
+                <button type="button" class="btn btn-primary btn-lg float-right" onclick="getSinger()">Lets Sing!</button>
             </form>
         </div>
     </div>

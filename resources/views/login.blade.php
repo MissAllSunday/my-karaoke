@@ -33,7 +33,7 @@
                        placeholder="Give me your signer name!!">
             </div>
             <div class="col-md-9"></div>
-            <button type="submit" class="btn btn-primary btn-lg float-right">Lets Sing!</button>
+            <button type="button" class="btn btn-primary btn-lg float-right" onclick="addSinger(document.getElementById('nick').value)">Lets Sing!</button>
         </form>
     </div>
 </div>
@@ -55,5 +55,6 @@
   };
 </script>
 <script src="js/Judge.js"></script>
+<script src="js/Singer.js"></script>
 </body>
 </html>
