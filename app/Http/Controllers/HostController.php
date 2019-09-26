@@ -33,6 +33,6 @@ class HostController extends Controller
 
     private static function getEmbedFromUrl($url)
     {
-        return preg_replace("/\s*[a-zA-Z\/\/:\.]*youtube.com\/watch\?v=([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i","<iframe style=\"width: 100%; height: 500px; display: block\" src=\"//www.youtube.com/embed/$1\" frameborder=\"0\" allowfullscreen></iframe>", $url);
+        return preg_replace("/\s*[a-zA-Z\/\/:\.]*youtube.com\/watch\?v=([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i","<iframe style=\"width: 100%; height: 500px; display: block\" src=\"//www.youtube.com/embed/$1?controls=0\" frameborder=\"0\" allowfullscreen></iframe>", $url);
     }
 }
