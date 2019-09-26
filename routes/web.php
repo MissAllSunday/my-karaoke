@@ -21,6 +21,9 @@ $router->get('/host/game', 'HostController@showGame');
 
 $router->get('user/{id}', 'UserController@show');
 
+
+$router->get('login/', 'LoginController@nick');
+
 $router->get('user/{id}', 'UserController@show');
 
 $router->get('vote', 'RateController@vote');

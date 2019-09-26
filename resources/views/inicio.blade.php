@@ -14,7 +14,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-primary btn-lg mx-auto d-block col-md-6" onclick="addSinger('Mario')">I'm singing</button>
+                    <button type="button" class="btn btn-primary btn-lg mx-auto d-block col-md-6" onclick="goToLoginController()">I'm singing</button>
                 </div>
                 <div class="col-md-4">
                     <button type="button" class="btn btn-primary btn-lg mx-auto d-block col-md-6">Evaluate</button>
@@ -29,7 +29,11 @@
         function goToHostController() {
             location.href = "/host";
         }
-    </script>
+
+        function goToLoginController() {
+            location.href = "/login";
+        }
+    </script><script src="https://www.gstatic.com/firebasejs/6.6.2/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase.js"></script>
     <script type="application/javascript">
         const config = {

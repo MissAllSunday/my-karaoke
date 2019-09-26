@@ -11,6 +11,8 @@ const addSinger = function (name) {
             console.log(data);
             return snapshot.val();
         });
+
+    location.href = "/";
 };
 
 const activateSinger = function () {
