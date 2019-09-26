@@ -14,7 +14,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-primary btn-lg mx-auto d-block col-md-6">Sign</button>
+                    <button type="button" class="btn btn-primary btn-lg mx-auto d-block col-md-6" onclick="addSinger('Mario')">I'm singing</button>
                 </div>
                 <div class="col-md-4">
                     <button type="button" class="btn btn-primary btn-lg mx-auto d-block col-md-6">Evaluate</button>
@@ -29,5 +29,16 @@
         function goToHostController() {
             location.href = "/host";
         }
+    </script><script src="https://www.gstatic.com/firebasejs/6.6.2/firebase.js"></script>
+    <script type="application/javascript">
+        const config = {
+            apiKey: "AIzaSyAdKeHjjwNY2GD0bUnx_d6ljvgaej-OT0c",
+            authDomain: "https://accounts.google.com/o/oauth2/auth",
+            databaseURL: "https://my-karaoke-c0a51.firebaseio.com/",
+        };
+        firebase.initializeApp(config);
+        const database = firebase.database();
     </script>
+    <script src="js/Singer.js"></script>
+
 </html>
