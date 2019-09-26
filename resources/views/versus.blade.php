@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-lg-3">
-                <button class="btn btn-primary btn-lg btn-block" onclick="judgeSinger({{ $singer['id'] }})">
+                <button class="btn btn-primary btn-lg btn-block" onclick="judgeSinger('{{ $singer['id'] }}')">
                     <i class="fa fa-microphone"></i>
                     Keep singing
                 </button>
@@ -25,7 +25,7 @@
                      class="rounded-circle mx-auto d-block" alt="..." style="height: 300px; width: 300px">
             </div>
             <div class="col-md-12 col-lg-3">
-                <button class="btn btn-danger btn-lg btn-block" onclick="booSinger({{ $singer['id'] }})">
+                <button class="btn btn-danger btn-lg btn-block" onclick="booSinger('{{ $singer['id'] }}')">
                     <i class="fa fa-trash"></i>
                     Shut up
                 </button>
@@ -48,5 +48,6 @@
         const database = firebase.database();
     </script>
     <script src="js/Singer.js"></script>
+    <script src="js/Judge.js"></script>
 
 </html>
