@@ -15,6 +15,9 @@ $router->get('/', 'InicioController');
 
 $router->get('/leaderboard', 'LeaderboardController@show');
 
+$router->get('/host', 'HostController@showLobby');
+
+$router->get('/host/game', 'HostController@showGame');
 
 $router->get('user/{id}', 'UserController@show');
 
