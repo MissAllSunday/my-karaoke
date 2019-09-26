@@ -11,8 +11,10 @@
 |
 */
 
-$app->get('/', 'InicioController');
+$router->get('/', 'InicioController');
 
-$app->get('sing/{id}', 'SingController');
+$router->get('/leaderboard', 'LeaderboardController@show');
 
-$app->get('rate/{id}', 'RateController');
+$router->get('user/{id}', 'UserController@show');
+
+$router->get('user/{id}', 'UserController@show');
