@@ -1,0 +1,3 @@
+[submodule "laradock-karaoke"]
+	path = laradock-karaoke
+	url = https://github.com/Laradock/laradock.git
