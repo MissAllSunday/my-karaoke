@@ -22,7 +22,9 @@ class HostController extends Controller
 
     public function showGame()
     {
-        return view('host_game', ['karaokeEmbed' => self::getRandomEmbed()]);
+        return view('host_game', [
+            'karaokeEmbed' => self::getRandomEmbed(),
+        ]);
     }
 
     private static function getRandomEmbed(): string
