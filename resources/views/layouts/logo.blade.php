@@ -1,1 +1,1 @@
-<img src="{{ URL::to('/') }}/images/KareokeApp.png" alt="">
+<img src="images/KareokeApp.png" class="rounded mx-auto d-block" alt="..." width="600px">
