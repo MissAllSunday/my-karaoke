@@ -57,6 +57,8 @@ $app->singleton(
 |
 */
 
+$app->configure("services");
+
 // $app->middleware([
 //     App\Http\Middleware\ExampleMiddleware::class
 // ]);
