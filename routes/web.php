@@ -11,6 +11,8 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return view("app");
-});
+$app->get('user/{id}', 'UserController@show');
+
+$app->get('user/{id}', 'UserController@show');
+
+$app->get('user/{id}', 'UserController@show');
