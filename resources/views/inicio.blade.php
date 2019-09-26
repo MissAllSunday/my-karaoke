@@ -29,7 +29,8 @@
         function goToHostController() {
             location.href = "/host";
         }
-    </script><script src="https://www.gstatic.com/firebasejs/6.6.2/firebase.js"></script>
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase.js"></script>
     <script type="application/javascript">
         const config = {
             apiKey: "AIzaSyAdKeHjjwNY2GD0bUnx_d6ljvgaej-OT0c",
