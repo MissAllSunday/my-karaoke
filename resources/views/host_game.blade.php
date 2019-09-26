@@ -12,7 +12,7 @@
     <body>
         <nav class="navbar navbar-light bg-light" >
             <a class="navbar-brand">Sing!</a>
-            <form class="form-inline"></form>
+            <div style="font-size: 20px; margin-right: 30px">Time remaining: <div id="video-countdown"></div></div>
         </nav>
         <div class="row">
             <div class="col-md-8 col-md-offset-1">
@@ -32,4 +32,28 @@
             </h3>
         </div>
     </body>
+    <script>
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            var fiveMinutes = 60 * Math.max(20, Math.floor(Math.random() * 60)),
+                display = document.querySelector('#video-countdown');
+            startTimer(fiveMinutes, display);
+        };
+    </script>
 </html>
