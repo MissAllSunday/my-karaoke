@@ -22,3 +22,10 @@ $router->get('/host/game', 'HostController@showGame');
 $router->get('user/{id}', 'UserController@show');
 
 $router->get('user/{id}', 'UserController@show');
+
+$router->get('vote', function () {
+    return view('versus', ['singer' => [
+        'name' => 'sdasad',
+        'id' => '12321',
+    ]]);
+});
