@@ -13,6 +13,8 @@
 
 $router->get('/', 'InicioController');
 
+$router->get('/leaderboard', 'LeaderboardController@show');
+
 $router->get('user/{id}', 'UserController@show');
 
 $router->get('user/{id}', 'UserController@show');
