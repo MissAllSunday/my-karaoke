@@ -13,18 +13,18 @@
     @include('/layouts/logo')
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-12 col-lg-3">
                 <button class="btn btn-primary btn-lg btn-block" onclick="judgeSinger({{ $singer['id'] }})">
                     <i class="fa fa-microphone"></i>
                     Keep singing
                 </button>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
                 <h1 class="text-center">{{ $singer['name'] }}</h1>
-                <img src="https://ichef.bbci.co.uk/news/660/cpsprodpb/12D1F/production/_105478077_10b7b7ca-ad7a-4bbb-bbdc-6f9e2161f18f.jpg"
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSzB70BxT4wUj9tGSYT6pFaKSuZBAg5_ScEf-pFCX5FV4OBvh25"
                      class="rounded-circle mx-auto d-block" alt="..." style="height: 300px; width: 300px">
             </div>
-            <div class="col-md-3">
+            <div class="col-md-12 col-lg-3">
                 <button class="btn btn-danger btn-lg btn-block" onclick="booSinger({{ $singer['id'] }})">
                     <i class="fa fa-trash"></i>
                     Shut up
