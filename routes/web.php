@@ -11,8 +11,8 @@
 |
 */
 
-$app->get('user/{id}', 'UserController@show');
+$app->get('/', 'InicioController');
 
-$app->get('user/{id}', 'UserController@show');
+$app->get('sing/{id}', 'SingController');
 
-$app->get('user/{id}', 'UserController@show');
+$app->get('rate/{id}', 'RateController');
